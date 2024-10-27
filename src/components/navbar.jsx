@@ -59,9 +59,7 @@ function Navbar({ theme, setTheme }) {
 
   return (
     <div
-      className={`fixed w-screen z-[998] bg-[#DEDCDB] ${
-        navbar && !isMenuOpen ? "blur-background" : ""
-      }`}
+      className={`fixed w-screen z-[998] bg-[#DEDCDB]`}
     >
       <Wrapper>
         <div className="flex justify-between items-center py-3 md:py-4 relative z-[9999]">
@@ -128,9 +126,9 @@ function Navbar({ theme, setTheme }) {
               className={`burger ${isMenuOpen ? "open" : ""} block lg:hidden`}
               onClick={toggleMenu}
             >
-              <div className="w-[25px] h-[2px] rounded-full block duration-300 bg-[#050a41] dark:bg-white"></div>
-              <div className="w-[25px] h-[2px] rounded-full block duration-300 bg-[#050a41] dark:bg-white"></div>
-              <div className="w-[25px] h-[2px] rounded-full block duration-300 bg-[#050a41] dark:bg-white"></div>
+              <div className="w-[25px] h-[2px] rounded-full block duration-300 bg-[#050a41]"></div>
+              <div className="w-[25px] h-[2px] rounded-full block duration-300 bg-[#050a41]"></div>
+              <div className="w-[25px] h-[2px] rounded-full block duration-300 bg-[#050a41]"></div>
             </div>
           </div>
         </div>
@@ -144,7 +142,7 @@ function Navbar({ theme, setTheme }) {
           <li onClick={toggleMenu}>
             <Link
               to={"/about"}
-              className="font-medium block text-base text-center rounded-xl p-4 mb-2.5 cursor-pointer bg-[#f8f9fa] dark:text-white dark:bg-[#f8f9fa1a] dark:bg-opacity-10"
+              className="font-medium block text-base text-center rounded-xl p-4 mb-2.5 cursor-pointer bg-[#f8f9fa]"
             >
               {getText("navbarAbout")}
             </Link>
@@ -152,7 +150,7 @@ function Navbar({ theme, setTheme }) {
           <li onClick={toggleMenu}>
             <Link
               to={"/contact"}
-              className="font-medium block text-base text-center rounded-xl p-4 mb-2.5 cursor-pointer bg-[#f8f9fa] dark:text-white dark:bg-[#f8f9fa1a] dark:bg-opacity-10"
+              className="font-medium block text-base text-center rounded-xl p-4 mb-2.5 cursor-pointer bg-[#f8f9fa]"
             >
               {getText("navbarContact")}
             </Link>
