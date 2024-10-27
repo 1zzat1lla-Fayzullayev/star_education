@@ -136,7 +136,7 @@ function Navbar({ theme, setTheme }) {
         </div>
       </Wrapper>
       <div
-        className={`menu duration-300 h-full xl:w-[calc(100%-170px)] lg:hidden max-w-xl xl:max-w-none xl:h-auto bg-white fixed inset-0 z-[99] pt-20 lg:pt-24 px-5 pb-6 flex flex-col justify-between xl:hidden dark:bg-[#121624] ${
+        className={`menu duration-300 h-full xl:w-[calc(100%-170px)] lg:hidden max-w-xl xl:max-w-none xl:h-auto bg-white fixed inset-0 z-[999] pt-20 lg:pt-24 px-5 pb-6 flex flex-col justify-between xl:hidden ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
