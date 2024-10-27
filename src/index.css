@@ -1,0 +1,404 @@
+/* styles.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Aeonik", sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html.dark body {
+    background-color: rgb(18 22 36);
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: "Aeonik";
+    src: url("/src/fonts/AeonikTRIAL-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.burger {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger.open div:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.burger.open div:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.open div:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+.menu {
+    transition: transform 0.3s ease;
+}
+
+.menu.translate-x-0 {
+    transform: translateX(0);
+}
+
+.menu.-translate-x-full {
+    transform: translateX(-100%);
+}
+
+.activeGray {
+    background-color: rgb(248 249 250);
+}
+
+.nav-button {
+    background: linear-gradient(62.19deg, #f27d00 15.48%, #f8a700 76.25%);
+    transition: ease-in-out 0.3s;
+    font-family: "Aeonik", sans-serif;
+}
+
+.nav-button:hover {
+    box-shadow: 0 10px 25px 0 #f6960166;
+}
+
+.header-btn:hover {
+    box-shadow: 0 10px 25px 0 #0d9aff70;
+}
+
+.darkBlack {
+    background-color: rgb(18 22 36);
+}
+
+.dark .activeGray {
+    background-color: rgb(30 30 30);
+}
+
+.blue-gradient {
+    background: linear-gradient(37.55deg, #0d99ff 19.62%, #22b1ec 84.46%);
+}
+
+.orange-gradient {
+    background: linear-gradient(62.19deg, #f27d00 15.48%, #f8a700 76.25%);
+}
+
+.red-gradient {
+    background: linear-gradient(62.18deg, #e60c20 15.48%, #ee5b0a 76.25%);
+}
+
+.green-gradient {
+    background: linear-gradient(62.18deg, #029720 15.48%, #60b212 76.25%);
+}
+
+.card-hover:hover .card-icon .card-circle,
+.card-hover:hover .card-title {
+    color: white;
+}
+
+.card-bg-blue-hover:hover {
+    background: linear-gradient(37.55deg, #0d99ff 19.62%, #22b1ec 84.46%);
+}
+
+.card-bg-orange-hover:hover {
+    background: linear-gradient(62.19deg, #f27d00 15.48%, #f8a700 76.25%);
+}
+
+.card-bg-red-hover:hover {
+    background: linear-gradient(62.18deg, #e60c20 15.48%, #ee5b0a 76.25%);
+}
+
+.card-bg-green-hover:hover {
+    background: linear-gradient(62.18deg, #029720 15.48%, #60b212 76.25%);
+}
+
+.card-icon .blue-card-circle {
+    background: linear-gradient(37.55deg, #0d99ff 19.62%, #22b1ec 84.46%);
+}
+
+.card-icon .orange-card-circle {
+    background: linear-gradient(62.19deg, #f27d00 15.48%, #f8a700 76.25%);
+}
+
+.card-icon .red-card-circle {
+    background: linear-gradient(62.18deg, #e60c20 15.48%, #ee5b0a 76.25%);
+}
+
+.card-icon .green-card-circle {
+    background: linear-gradient(62.18deg, #029720 15.48%, #60b212 76.25%);
+}
+
+.card-bg-blue-hover:hover .card-icon .blue-card-circle {
+    background: white;
+}
+
+.card-bg-red-hover:hover .card-icon .red-card-circle {
+    background: white;
+}
+
+.card-bg-orange-hover:hover .card-icon .orange-card-circle {
+    background: white;
+}
+
+.card-bg-green-hover:hover .card-icon .green-card-circle {
+    background: white;
+}
+
+.mainBlue {
+    color: #050a41;
+}
+
+.mask-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.masked-image {
+    width: 100%;
+    height: auto;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.136) 50%);
+    mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    /* Prevent skewed content from overflowing */
+    will-change: transform;
+    /* Optimize for performance */
+}
+
+.header-button {
+    appearance: button;
+    background-color: #1899d6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.header-button::after {
+    background-clip: padding-box;
+    background-color: #1cb0f6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.header-button:main,
+.header-button:focus {
+    user-select: auto;
+}
+
+.header-button:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+.header-button:disabled {
+    cursor: auto;
+}
+
+.header-button:active:after {
+    border-width: 0 0 0px;
+}
+
+.header-button:active {
+    padding-bottom: 10px;
+}
+
+.blur-background {
+    backdrop-filter: blur(10px);
+    transition: backdrop-filter 0.3s ease;
+}
+
+.service-card {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.service-card-top {
+    position: relative;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.service-card-top::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.092);
+    transition: height 0.4s ease-in-out, width 0.4s ease-in-out;
+}
+
+.service-card-top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.092);
+    transition: width 0.4s ease-in-out;
+}
+
+.service-card-top:hover::after {
+    height: 100%;
+    width: 2px;
+}
+
+.service-card-top:hover::before {
+    width: 100%;
+}
+
+.service-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.092);
+    transition: height 0.4s ease-in-out, width 0.4s ease-in-out;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.092);
+    transition: width 0.4s ease-in-out;
+}
+
+.service-card:hover::after {
+    height: 100%;
+    width: 2px;
+}
+
+.service-card:hover::before {
+    width: 100%;
+}
+
+@keyframes bottomToTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+        visibility: hidden;
+        /* Animatsiya boshlanishidan oldin yashirin */
+    }
+    1% {
+        visibility: visible;
+        /* Animatsiya boshida ko'rinadi */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+        /* Oxirigacha ko'rinadi */
+    }
+}
+
+.animate-bottom-to-top {
+    animation: bottomToTop 1s ease-out forwards;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    color: white;
+    font-size: 20px;
+}
+
+.swiper-button-next {
+    transition: ease-in-out 0.3s;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.swiper-button-prev {
+    transition: ease-in-out 0.3s;
+    height: 78px;
+    width: 78px;
+    border-radius: 50%;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.swiper-button-next:hover {
+    background-color: #900c3f;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+}
+
+.swiper-button-prev:hover {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background-color: #900c3f;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    color: white;
+    font-size: 20px;
+}
