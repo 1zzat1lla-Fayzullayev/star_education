@@ -59,12 +59,12 @@ function Navbar({ theme, setTheme }) {
 
   return (
     <div
-      className={`fixed w-screen z-[999] bg-[#DEDCDB] ${
+      className={`fixed w-screen z-[998] bg-[#DEDCDB] ${
         navbar && !isMenuOpen ? "blur-background" : ""
       }`}
     >
       <Wrapper>
-        <div className="flex justify-between items-center py-3 md:py-4 relative z-[999]">
+        <div className="flex justify-between items-center py-3 md:py-4 relative z-[9999]">
           <div className="flex items-center gap-[30px]">
             <Link to={"/"}>
               <div className="flex items-center gap-1">
@@ -140,7 +140,7 @@ function Navbar({ theme, setTheme }) {
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="xl:flex xl:gap-x-5">
+        <div className="xl:flex xl:gap-x-5 mt-[20px]">
           <li onClick={toggleMenu}>
             <Link
               to={"/about"}
