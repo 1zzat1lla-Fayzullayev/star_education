@@ -24,6 +24,8 @@ export const ru = {
     english: "Английский язык",
     russian: "Русский язык",
     ielts: "IELTS",
-    sat: "SAT"
+    sat: "SAT",
+    physics: "Физика",
+    ourCourses: "Наши курсы",
 
 }

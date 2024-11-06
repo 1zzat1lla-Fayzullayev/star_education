@@ -19,10 +19,13 @@ export const uz = {
     contactLink1: "ko'proq bilib oling",
     contactButtonSending: "Yuborilmoqda...",
     contactButtonSend: "Yuborish",
-    
+
     math: "Matematika",
     english: "Ingliz tili",
     russian: "Rus tili",
     ielts: "IELTS",
-    sat: "SAT"
+    sat: "SAT",
+    physics: "Fizika",
+
+    ourCourses: "Bizning kurslar",
 }

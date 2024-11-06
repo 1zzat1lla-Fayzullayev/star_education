@@ -61,7 +61,7 @@ const ContactUS = () => {
                 <div className="w-full flex items-center flex-col lg:flex-row">
                     <form onSubmit={sendFeedback} className="p-8 rounded-lg ">
                         <div className="flex flex-col justify-center items-center">
-                            <h3 className="md:text-[50px] font-bold text-gray-800 mb-2 dark:text-white leading-[50px]">{getText("contactHeading")}</h3>
+                            <h3 className="text-[25px] md:text-[30px] lg:text-[50px] font-bold text-gray-800 mb-2 dark:text-white leading-[50px]">{getText("contactHeading")}</h3>
                             <p className="text-gray-600 mb-6">{getText("contactParagraph")}</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">

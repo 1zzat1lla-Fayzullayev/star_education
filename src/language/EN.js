@@ -24,6 +24,9 @@ export const en = {
     english: "English Language",
     russian: "Russian Language",
     ielts: "IELTS",
-    sat: "SAT"
+    sat: "SAT",
+    physics: "Physics",
+
+    ourCourses: "Our courses",
 
 }
