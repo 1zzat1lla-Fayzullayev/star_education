@@ -10,7 +10,7 @@ function Contact() {
 
   return (
     <div
-      className="pt-[150px] transition-colors duration-300"
+      className="pt-[100px] transition-colors duration-300"
       style={{ minHeight: "calc(100vh - 22.8rem)" }}
     >
       <Wrapper>
@@ -23,13 +23,7 @@ function Contact() {
               {getText("contactParagrf")}
             </p>
           </div>
-          <div className="w-full md:w-1/2">
-            <img
-              src="https://bui.co/wp-content/uploads/2022/07/Frame-1.svg"
-              alt="Contact Illustration"
-              className="w-full h-auto rounded-lg transition-transform duration-300 transform hover:scale-105"
-            />
-          </div>
+         
         </div>
 
         <div className="mt-12">
