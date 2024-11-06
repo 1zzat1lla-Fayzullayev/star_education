@@ -43,48 +43,15 @@ function Footer({ theme }) {
                     {getText("footerContactTitle")}
                   </h2>
                   <a
-                    href="tel:+998909196545"
-                    className="flex items-center gap-x-2 text-[#85888E] mt-2"
+                    href="tel:+998909298801"
+                    className="flex items-center gap-x-2 text-[#000] mt-2"
                   >
-                    <FontAwesomeIcon icon={faTelegram} />
-                    +998 (90) 919 65 45
+                    {/* <FontAwesomeIcon icon={"phone"} /> */}
+                    <img src="/phone.svg" alt="" className="w-[30px]" />
+                    +998 (90) 929 88 01
                   </a>
                 </div>
-                <div className="flex gap-x-4">
-                  <a
-                    aria-label="Watch us on Instagram"
-                    target="_blank"
-                    href="https://www.instagram.com/eduagencyuz/"
-                  >
-                    <FontAwesomeIcon
-                      icon={faInstagram}
-                      size="2x"
-                      className="text-[#85888E]"
-                    />
-                  </a>
-                  <a
-                    aria-label="Watch us on Facebook"
-                    target="_blank"
-                    href="https://facebook.com/eduagency.uz"
-                  >
-                    <FontAwesomeIcon
-                      icon={faFacebookF}
-                      size="2x"
-                      className="text-[#85888E]"
-                    />
-                  </a>
-                  <a
-                    aria-label="Watch us on Telegram"
-                    target="_blank"
-                    href="https://t.me/eduagency_uz"
-                  >
-                    <FontAwesomeIcon
-                      icon={faTelegram}
-                      size="2x"
-                      className="text-[#85888E]"
-                    />
-                  </a>
-                </div>
+               
               </div>
             </Wrapper>
           </div>

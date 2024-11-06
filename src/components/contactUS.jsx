@@ -58,10 +58,10 @@ const ContactUS = () => {
     return (
         <Wrapper>
             <div className="flex flex-col md:flex-row items-center justify-center mt-[50px]" id="contact">
-                <div className="w-full">
-                    <form onSubmit={sendFeedback} className="p-8 rounded-lg">
+                <div className="w-full flex items-center flex-col lg:flex-row">
+                    <form onSubmit={sendFeedback} className="p-8 rounded-lg ">
                         <div className="flex flex-col justify-center items-center">
-                            <h3 className="md:text-[50px] font-bold text-gray-800 mb-2 dark:text-white">{getText("contactHeading")}</h3>
+                            <h3 className="md:text-[50px] font-bold text-gray-800 mb-2 dark:text-white leading-[50px]">{getText("contactHeading")}</h3>
                             <p className="text-gray-600 mb-6">{getText("contactParagraph")}</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -126,9 +126,6 @@ const ContactUS = () => {
                                 required
                             />
                         </div>
-                        <p className="text-gray-600 mb-4">
-                        {getText("contactLink")} <a href="#" className="text-blue-500 hover:underline">{getText("contactLink1")}</a>
-                        </p>
                         <button
                             type="submit"
                             disabled={isLoading}
@@ -143,6 +140,7 @@ const ContactUS = () => {
                         </button>
                         <ToastContainer />
                     </form>
+                    <img src="/contact_icon.png" alt="" />
                 </div>
             </div>
         </Wrapper>
