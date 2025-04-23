@@ -53,31 +53,21 @@ function Navbar() {
 
       {/* Mobil menyu */}
       <div
-        className={`fixed top-0 left-0 inset-0 w-full h-screen bg-[#F5F7F8] z-[998] transition-all duration-300 ease-in-out transform
-        ${
+        className={`fixed top-0 left-0 inset-0 w-full min-h-screen bg-[#F5F7F8] transition-all duration-300 ease-in-out z-[998] ${
           useMobile
             ? "translate-x-0 opacity-100 pointer-events-auto"
             : "-translate-x-full opacity-0 pointer-events-none"
-        }
-        `}
+        }`}
       >
-        <div
-          className={`fixed top-0 left-0 inset-0 w-full h-screen bg-[#F5F7F8] transition-all duration-300 ease-in-out transform z-[999] ${
-            useMobile
-              ? "translate-x-0 opacity-100 pointer-events-auto"
-              : "-translate-x-full opacity-0 pointer-events-none"
-          }`}
-        >
-          <div className="flex flex-col justify-between h-full px-[20px] py-[30px] overflow-y-auto">
-            <div className="flex-grow flex items-center justify-center">
-              <Navbar_Ul mobile={true} />
-            </div>
+        <div className="flex flex-col justify-between min-h-screen px-[20px] py-[30px] overflow-y-auto">
+          <div className="flex-grow flex items-center justify-center">
+            <Navbar_Ul mobile={true} />
+          </div>
 
-            <div className="mt-auto">
-              <button className="bg-[#F4CE14] w-full px-4 py-3 rounded-[8px] font-medium cursor-pointer shadow-md">
-                Murojaat uchun
-              </button>
-            </div>
+          <div className="mt-auto">
+            <button className="bg-[#F4CE14] w-full px-4 py-3 rounded-[8px] font-medium cursor-pointer shadow-md">
+              Murojaat uchun
+            </button>
           </div>
         </div>
       </div>
