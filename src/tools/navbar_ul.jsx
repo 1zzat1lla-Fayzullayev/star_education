@@ -8,7 +8,7 @@ function Navbar_Ul({ mobile = false }) {
     <ul
       className={`${
         mobile
-          ? "flex flex-col items-center gap-[20px]"
+          ? "flex flex-col items-center gap-[20px] text-[20px]"
           : "hidden sm:flex items-center gap-[30px]"
       }`}
     >
