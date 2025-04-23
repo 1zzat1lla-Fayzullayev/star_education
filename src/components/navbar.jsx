@@ -5,13 +5,12 @@ import Navbar_Ul from "../tools/navbar_ul";
 
 function Navbar() {
   const [useMobile, setUseMobile] = useState(false);
-  const location = useLocation(); // sahifa yo‘lini kuzatamiz
+  const location = useLocation();
 
   const handleOpenMobile = () => {
     setUseMobile(!useMobile);
   };
 
-  // Sahifa o‘zgarganda menyuni avtomatik yopamiz
   useEffect(() => {
     setUseMobile(false);
   }, [location.pathname]);
@@ -35,15 +34,16 @@ function Navbar() {
               ></div>
               <div
                 className={`w-[30px] h-[2px] bg-black transition-all ease-in-out transform ${
-                  useMobile ? "opacity-0" : " "
+                  useMobile ? "opacity-0" : ""
                 }`}
               ></div>
               <div
                 className={`w-[30px] h-[2px] bg-black transition-all ease-in-out transform ${
-                  useMobile ? "-rotate-[45deg] translate-y-[-10px]" : ""
+                  useMobile ? "-rotate-[45deg] -translate-y-[10px]" : ""
                 }`}
               ></div>
             </div>
+
             <button className="bg-[#F4CE14] hidden sm:block px-4 py-2 rounded-[5px] font-medium cursor-pointer">
               Murojaat uchun
             </button>
@@ -51,19 +51,18 @@ function Navbar() {
         </Wrapper>
       </div>
 
-      {/* Mobil menyu */}
+      {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 inset-0 w-full min-h-screen bg-[#F5F7F8] transition-all duration-300 ease-in-out z-[998] ${
+        className={`fixed top-0 left-0 w-full h-full bg-[#F5F7F8] z-[998] transition-all duration-300 ease-in-out ${
           useMobile
-            ? "translate-x-0 opacity-100 pointer-events-auto"
-            : "-translate-x-full opacity-0 pointer-events-none"
+            ? "opacity-100 translate-x-0 pointer-events-auto"
+            : "opacity-0 -translate-x-full pointer-events-none"
         }`}
       >
-        <div className="flex flex-col justify-between min-h-screen px-[20px] py-[30px] overflow-y-auto">
+        <div className="flex flex-col justify-between h-full px-[20px] pt-[100px] pb-[30px]">
           <div className="flex-grow flex items-center justify-center">
             <Navbar_Ul mobile={true} />
           </div>
-
           <div className="mt-auto">
             <button className="bg-[#F4CE14] w-full px-4 py-3 rounded-[8px] font-medium cursor-pointer shadow-md">
               Murojaat uchun
