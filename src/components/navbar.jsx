@@ -20,7 +20,12 @@ function Navbar() {
       <div className="bg-[#F5F7F8] p-2 fixed top-0 left-0 w-full z-[999]">
         <Wrapper>
           <div className="flex items-center justify-between px-[20px] xl:px-0">
-            <img src="/logo.png" className="w-[80px]" />
+            <div className="flex items-center gap-2">
+              <img src="/logo.png" className="w-[60px] md:w-[80px]" />
+              <h2 className="text-[20px] uppercase font-semibold sm:hidden md:block">
+                <span className="text-black">star</span> <span className="text-blue-500">education</span>
+              </h2>
+            </div>
             <Navbar_Ul mobile={false} />
 
             <div
