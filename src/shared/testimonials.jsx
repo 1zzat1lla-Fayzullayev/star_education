@@ -65,7 +65,7 @@ function Testimonials() {
         >
           {testimonials.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="bg-white p-10 rounded-3xl shadow-lg hover:shadow-2xl transition mx-8 text-center">
+              <div className="bg-white py-5 px-3  md:p-6 rounded-3xl shadow-lg hover:shadow-2xl transition mx-8 text-center">
                 <div className="flex justify-center mb-4">
                   {renderStars(item.rating)}
                 </div>
