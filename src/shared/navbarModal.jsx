@@ -114,7 +114,12 @@ function NavbarModal({ setRegisterModal }) {
         ></textarea>
         <div className="flex items-center w-full justify-between gap-2">
           <button
-            onClick={sendFeedback}
+            type="submit"
+            onClick={async (e) => {
+              e.preventDefault(); 
+              await sendFeedback(e);
+              setRegisterModal(false);
+            }}
             className="bg-[#F4CE14] text-black py-3 rounded-lg font-medium hover:bg-[#f4cf14cc] cursor-pointer transition w-full"
             disabled={isLoading}
           >
@@ -123,7 +128,7 @@ function NavbarModal({ setRegisterModal }) {
 
           <button
             type="button"
-            className="bg-red-500 text-black py-3 rounded-lg font-medium hover:bg-red-400 cursor-pointer transition w-full"
+            className="bg-red-500 text-white py-3 rounded-lg font-medium hover:bg-red-400 cursor-pointer transition w-full"
             onClick={() => setRegisterModal(false)}
           >
             Yopish
