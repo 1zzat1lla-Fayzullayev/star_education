@@ -91,7 +91,7 @@ function Form() {
   return (
     <Wrapper>
       <div className="px-[20px] xl:px-0">
-        <div className="mt-[120px]">
+        <div className="mt-[50px] md:mt-[120px]">
           <h2 className="text-[25px] lg:text-[30px] max-w-xl font-semibold text-black">
             Biz bilan bog‘laning, savollaringizga javob berishga tayyormiz!
           </h2>
@@ -134,7 +134,7 @@ function Form() {
               {isLoading ? "Yuborilyapti..." : "Yuborish"}
             </button>
           </form>
-          <div className="w-full max-w-sm">
+          <div className="w-full max-w-sm hidden md:block">
             <img
               src="/form.png"
               className="w-full h-auto object-cover rounded-lg"
