@@ -19,34 +19,26 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Dilfuza Rahimova",
-    role: "9-sinf o‘quvchisi",
+    name: "Исроилова Мухсина",
+    role: "11-sinf o‘quvchisi",
     content:
-      "Darslar juda qiziqarli va tushunarli bo‘lib o‘tadi. Avval matematikadan qo‘rqardim, endi esa bu mening sevimli fanim!",
+      "Для меня этот центр как второй дом, я изучаю математику, и честно, у меня нет такого чувство что у меня груз на плечах и что голова ничего не принимает, потому что наша учительница объясняет теми самым простым способом и для каждого ученика выбирает особый подход исходя из характера учеников. Именно поэтому я вам советую этот учебный центр.",
     rating: 5,
   },
   {
     id: 3,
-    name: "Shoxrux To‘xtayev",
+    name: "Abdurazzokov Miràzam",
     role: "11-sinf o‘quvchisi",
     content:
-      "Olimpiadaga tayyorgarlik ko‘rayotganimda, ustozlarim har bir savolimga batafsil javob berishdi. Natijada viloyat bosqichida 1-o‘rinni egalladim!",
+      "Ман шу учебный центрни тавсия киламан чунки ман бир йилга якин яхши репетитор кидирдим коп жойларга бордим лекин яхши устоз топа олмадим шу жойда эса чинакам профессионал Ситора опани топдим улага факатгина сизнинг натижангиз кизиктиради ва озларини шогирдлари учун бор кучларини берадила Ушбу марказга келишимдан олдин математикага боган фикрим жуда ёмон эди хич качон бу фанни органомиман диб ойлардим лекин  шу учебный центрга кеганимдан сонг фикрим бутунлай озгарди математика чунарли ва хатто кизикарли хам болди Окишда зор натижага эришмокчи булганларга ман шу учебный центрни чин дилдан тавсия киламан",
     rating: 5,
   },
   {
     id: 4,
-    name: "Shoxrux To‘xtayev",
+    name: "Samira Ibragimova",
     role: "11-sinf o‘quvchisi",
     content:
-      "Olimpiadaga tayyorgarlik ko‘rayotganimda, ustozlarim har bir savolimga batafsil javob berishdi. Natijada viloyat bosqichida 1-o‘rinni egalladim!",
-    rating: 5,
-  },
-  {
-    id: 5,
-    name: "Shoxrux To‘xtayev",
-    role: "11-sinf o‘quvchisi",
-    content:
-      "Olimpiadaga tayyorgarlik ko‘rayotganimda, ustozlarim har bir savolimga batafsil javob berishdi. Natijada viloyat bosqichida 1-o‘rinni egalladim!",
+      "Я занимался математикой в учебном центре Star Education несколько месяцев, и мне очень нравится! Ситора опа объясняет всё понятно и терпеливо, даже самые сложные темы становятся простыми. Занятия проходят интересно, много практики и задач, которые помогают лучше всё запомнить. Атмосфера дружелюбная, и всегда можно задать вопросы. Но я учился немного но мне очень нравится Star Education Спасибо за все Ситора опа я вас очень сильно уважаю и люблю спасибо за все и за обучение",
     rating: 5,
   },
 ];
