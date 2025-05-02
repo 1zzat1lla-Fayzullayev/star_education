@@ -5,3 +5,12 @@
   font-family: "Montserrat", sans-serif;
 }
 
+::-webkit-scrollbar{
+  background-color: white;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #F4CE14;
+  border-radius: 10px;
+}
