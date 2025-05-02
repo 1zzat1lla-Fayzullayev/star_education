@@ -41,6 +41,22 @@ const testimonials = [
       "Я занимался математикой в учебном центре Star Education несколько месяцев, и мне очень нравится! Ситора опа объясняет всё понятно и терпеливо, даже самые сложные темы становятся простыми. Занятия проходят интересно, много практики и задач, которые помогают лучше всё запомнить. Атмосфера дружелюбная, и всегда можно задать вопросы. Но я учился немного но мне очень нравится Star Education Спасибо за все Ситора опа я вас очень сильно уважаю и люблю спасибо за все и за обучение",
     rating: 5,
   },
+  {
+    id: 5,
+    name: "Кудратиллаева Робия",
+    role: "11-sinf o‘quvchisi",
+    content:
+      "Ман Star education га келишимдан олдин слишком коп учебный центрлага борганман лекн ман холаганимде хич ким дарс отомаган и мани кизиктиромаган (ман нимадир органмокчи босам биринчи устоззи отношениясига караб танлиман), но бу учебный центри ортогимдан ешитиб бориб кордим и биринчи дарси озидан йокти, дарс отишлари чунтиришлари хар битта абитуриент билан алохида ишлашлари мани озига тортди. Бошида хар хил хайол билан борганидим бу устозам йокмасачи нима киламан, дип чунки екзаминимга 20 кун коганиди. Агар силадаям шунака кам вахт боса и качественный учебный центри кидирвотган босела бемалол Star education ни тавсия килолиман.",
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: "Нортоев Хожиакбар",
+    role: "11-sinf o‘quvchisi",
+    content:
+      "Avvalam bor Asalom alekom man bu star education oquv markazini tanlaganimdan hech ham afsuslanmayaman negaki bu yerda haqiqiy talim va dostlar shu kabi tajribali ustoz yani Sitora opa borlar darvoqea bu star mening ikkinchi uyim bolib qoldi desam ham bolaveradi nafaqat bilim beradilar xattoki sizga hayotga qadam qoyishilarga juda ham katta ornak boladilar desam togri bolardi Sitora opa menga ham ustoz ham opajonm bolib qoladilar",
+    rating: 5,
+  },
 ];
 
 const renderStars = (rating) => {
