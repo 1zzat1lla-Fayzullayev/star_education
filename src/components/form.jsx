@@ -27,7 +27,7 @@ export function formatPhoneNumber(input) {
 }
 
 export const phoneValidate =
-  /^\+998 \((90|91|93|94|95|97|98|99|33|88|71)\) \d{3}-\d{2}-\d{2}$/;
+  /^\+998 \((90|91|93|94|95|97|98|99|33|88|71|20|50)\) \d{3}-\d{2}-\d{2}$/;
 
 function Form() {
   const [name, setName] = useState("");
