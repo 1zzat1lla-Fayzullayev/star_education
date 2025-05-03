@@ -5,12 +5,28 @@
   font-family: "Montserrat", sans-serif;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   background-color: white;
   width: 5px;
 }
 
-::-webkit-scrollbar-thumb{
-  background-color: #F4CE14;
+::-webkit-scrollbar-thumb {
+  background-color: #f4ce14;
   border-radius: 10px;
+}
+
+.phone_animate {
+  animation: phone_animate 2.5s ease-in-out infinite;
+}
+
+@keyframes phone_animate {
+  0% {
+    transform: translateY(-10px);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
 }

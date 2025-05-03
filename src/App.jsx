@@ -5,6 +5,7 @@ import About from "./pages/about";
 import Home from "./pages/home";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/footer";
+import Phone from "./shared/phone";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" index element={<Home />} />
           <Route path="/about" index element={<About />} />
         </Routes>
+        <Phone />
         <Footer />
       </BrowserRouter>
     </>

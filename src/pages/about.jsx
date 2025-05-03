@@ -3,7 +3,7 @@ import Wrapper from "../layout/wrapper";
 
 function About() {
   return (
-    <div className="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div className="py-7 md:py-16 bg-gradient-to-br from-gray-50 to-blue-50">
       <Wrapper>
         <div className="max-w-6xl mx-auto mt-[80px] px-6 lg:px-8">
           {/* Hero Section */}
@@ -131,19 +131,27 @@ function About() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
-              <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-2">22+</div>
+              <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-2">
+                22+
+              </div>
               <div className="text-gray-600">Yillik tajriba</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
-              <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-2">1000+</div>
+              <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-2">
+                1000+
+              </div>
               <div className="text-gray-600">O'quvchilar</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
-              <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-2">998+</div>
+              <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-2">
+                998+
+              </div>
               <div className="text-gray-600">Malakali o'qituvchilar</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
-              <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-2">100%</div>
+              <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-2">
+                100%
+              </div>
               <div className="text-gray-600">Muvaffaqiyat darajasi</div>
             </div>
           </div>
@@ -170,6 +178,36 @@ function About() {
               </div>
             </div>
           </div>
+
+          <section className="w-full">
+            <div className="text-center my-[80px]">
+              <h2 className="text-[25px] md:text-[30px] lg:text-[40px] font-semibold mb-4 text-black">
+                Manzilimiz
+              </h2>
+
+              <div className="relative overflow-hidden rounded-xl shadow-md">
+                <a
+                  href="https://yandex.uz/maps/org/113005110697/?utm_medium=mapframe&utm_source=maps"
+                  className="text-xs text-gray-300 absolute top-0 left-0 z-10"
+                >
+                  Math class
+                </a>
+                <a
+                  href="https://yandex.uz/maps/10335/tashkent/category/educational_center/184106168/?utm_medium=mapframe&utm_source=maps"
+                  className="text-xs text-gray-300 absolute top-4 left-0 z-10"
+                >
+                  Учебный центр в Ташкенте
+                </a>
+                <iframe
+                  src="https://yandex.uz/map-widget/v1/?ll=69.219212%2C41.332827&mode=poi&poi%5Bpoint%5D=69.219157%2C41.332957&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D113005110697&z=19.89"
+                  width="100%"
+                  height="400"
+                  className="w-full h-[400px] border-0 relative"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </section>
         </div>
       </Wrapper>
     </div>
