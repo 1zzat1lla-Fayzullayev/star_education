@@ -57,6 +57,30 @@ const testimonials = [
       "Avvalam bor Asalom alekom man bu star education oquv markazini tanlaganimdan hech ham afsuslanmayaman negaki bu yerda haqiqiy talim va dostlar shu kabi tajribali ustoz yani Sitora opa borlar darvoqea bu star mening ikkinchi uyim bolib qoldi desam ham bolaveradi nafaqat bilim beradilar xattoki sizga hayotga qadam qoyishilarga juda ham katta ornak boladilar desam togri bolardi Sitora opa menga ham ustoz ham opajonm bolib qoladilar",
     rating: 5,
   },
+  {
+    id: 7,
+    name: "Шохрухбеков Сайидумарбек",
+    role: "11-sinf o‘quvchisi",
+    content:
+      "Мне очень понравились курсы по математике. Преподаватели объясняют всё понятно и не спешат, пока не убедятся, что ты всё понял. Особенно помогли разборы задач и тестов — раньше я путался в формулах, а теперь решаю намного быстрее и увереннее. Атмосфера дружелюбная, можно спокойно задать любой вопрос. Благодаря этим курсам я начал лучше понимать математику и не так боюсь экзаменов. Спасибо большое всей команде!",
+    rating: 5,
+  },
+  {
+    id: 8,
+    name: "Ismoilov Ismoil",
+    role: "11-sinf o‘quvchisi",
+    content:
+      "O‘quv markazi haqida fikrim Men ushbu o‘quv markazida tahsil olayotganimdan juda mamnunman. Darslar juda qiziqarli va samarali o‘tadi. O‘qituvchilar bilimli, mehribon va har bir o‘quvchiga individual yondashishga harakat qilishadi. Ayniqsa, ustozlarning sabr-toqati va o‘quvchilarga bo‘lgan yondashuvi tahsinga loyiq. Darsdan tashqari vaqtimizda ham ko‘plab foydali mashg‘ulotlar o‘tkaziladi. Men bu yerda qisqa vaqt ichida ko‘p narsa o‘rgandim va bilimim sezilarli darajada oshdi. Boshqalarga ham ushbu o‘quv markazni tavsiya qilaman!",
+    rating: 5,
+  },
+  {
+    id: 9,
+    name: "Хикматуллаев Абдужаббор",
+    role: "11-sinf o‘quvchisi",
+    content:
+      "Хочу поблагодарить образовательный центр Star Education и моего учителя по математике за высокий уровень преподавания и внимательное отношение к ученикам. Занятия проходили интересно, материал объяснялся доступно и понятно, даже самые сложные темы стали гораздо яснее. Благодаря системному подходу и поддержке преподавателя, я значительно улучшил свои знания и успешно подготовился к экзаменам. Рекомендую Star Education всем, кто хочет получить качественную помощь в изучении математики!",
+    rating: 5,
+  },
 ];
 
 const renderStars = (rating) => {
