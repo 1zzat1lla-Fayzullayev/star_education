@@ -8,6 +8,7 @@ import "yet-another-react-lightbox/styles.css";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Wrapper from "../layout/wrapper";
+import { Link } from "react-router-dom";
 
 function Certificates() {
   const certificates = [
@@ -22,10 +23,17 @@ function Certificates() {
   return (
     <Wrapper>
       <div className="px-[20px] xl:px-0">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-900 mb-12 mt-[100px]">
-          2025-yil natijalari
-        </h2>
-
+        <div className="flex items-center justify-between mb-12 mt-[100px] ">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-900 ">
+            2025-yil natijalari
+          </h2>
+          <Link to={"/results"}>
+            <button className="flex items-center gap-1 bg-[#5f5f5f13] backdrop-blur-[10px] px-5 py-2 rounded-[55px] cursor-pointer transition ease-in hover:bg-[#5f5f5f0a]">
+              <span className="font-medium">Barchasi</span>
+              <img src="/right-arrow-svgrepo-com.svg" className="w-[30px]" />
+            </button>
+          </Link>
+        </div>
         <Swiper
           modules={[Autoplay]}
           spaceBetween={30}

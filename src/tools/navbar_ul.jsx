@@ -32,6 +32,16 @@ function Navbar_Ul({ mobile = false }) {
           Biz haqimizda
         </Link>
       </li>
+      <li>
+        <Link
+          to="/results"
+          className={`relative inline-block after:block after:h-[2px] after:w-0 after:bg-[#F4CE14] after:transition-all after:duration-300 after:ease-in-out after:absolute after:bottom-0 after:left-0 hover:after:w-full font-medium ${
+            location.pathname === "/results" ? "after:w-full" : ""
+          }`}
+        >
+          Natijalar
+        </Link>
+      </li>
     </ul>
   );
 }
