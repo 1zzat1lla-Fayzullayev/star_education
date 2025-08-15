@@ -18,7 +18,7 @@ function Results() {
 
   const education = [
     { src: "/edu1.jpg" },
-    { src: "/edu2.jpg" },
+    // { src: "/edu2.jpg" },
     { src: "/edu3.jpg" },
     { src: "/edu4.jpg" },
     { src: "/edu5.jpg" },
